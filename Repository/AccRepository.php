@@ -22,7 +22,7 @@ class AccRpository{
         $email = $Useracc->getEmail();
         $password = $Useracc->getPassword();
 
-        $sql = "INSERT INTO useraccounts(name,surname,birthday,gender,email,password)
+        $sql = "INSERT INTO perdoruesiback(name,surname,birthday,gender,email,password)
         VALUES(?,?,?,?,?,?)";
 
         $statement = $conn ->prepare($sql);
@@ -37,7 +37,7 @@ class AccRpository{
     function GjejLlogarine($email,$password){
         $conn=$this->connection;
 
-        $sql = "SELECT * FROM useraccounts WHERE email = ? AND password = ?";
+        $sql = "SELECT * FROM perdoruesiback WHERE email = ? AND password = ?";
         $statement = $conn->prepare($sql);
         $statement->execute([$email,$password]);
 

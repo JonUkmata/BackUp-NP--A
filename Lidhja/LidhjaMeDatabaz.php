@@ -4,7 +4,7 @@ class NutripathDB{
     private $servername= "localhost";
     private $username= "root";
     private $password= "";
-    private $db_name= "nutripathdatabse";
+    private $db_name= "backup-nutri";
 
 function Konektohu(){
     try{
